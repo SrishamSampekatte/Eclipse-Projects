@@ -1,0 +1,49 @@
+1) What is platform independent? Explain it using more than 100 words.
+      Platform independent is the java compiled  byte code and which can run on the any operating system is called as platform independent.
+		  
+		  
+2) What is the difference between primitive and non primitive data type?
+	 Premitive data types : These are the data types which are defined by the java(in built).
+	                        Ex: Int ,Float,Char,Boolean, Byte, Short,long,Double.
+	 Non-primitive data types : These are the data types which are defined by the user.
+							Ex: Arreys,String etc.
+	 
+3) Explain class and its members with an example.
+		The components of class such as method are called as class.
+		and it is the basic building block which creates a blueprint for the program. and it is used to create object.
+		
+6)
+
+
+
+7) program to find reverse of a number
+class Reverse{  
+	public static void main(String[] args)   
+{  
+	int number = 82777;
+	int reverse = 0;  
+	while(number != 0)   
+{  
+	int remainder = number % 10;  
+	reverse = reverse * 10 + remainder;  
+	number = number/10;  
+	}  
+	System.out.println("The reverse of the given number is: " + reverse);  
+}  
+}
+
+8) program to find hors into seconds
+
+	class HoursToSeconds{
+
+	public static void main(String[] args) {
+
+		int hours=1;
+		System.out.println("Please enter hours:");
+		long seconds = hours * 60 * 60;
+
+		System.out.println("Converted hours to Seconds:" +seconds);
+
+	}
+} 
+		
