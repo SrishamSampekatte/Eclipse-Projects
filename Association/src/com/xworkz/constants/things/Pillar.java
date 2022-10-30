@@ -8,9 +8,11 @@ public class Pillar {
 	public Shape shape;
 	public double height;
 	public boolean supporting;
-	public Company company;
+	public Company company 
+	=new Company("Larsen &Turbo","Construction");
 	
-	Company company1=new Company("Larsen &Turbo","Construction");
+	
+	
 	
 	public Pillar(int id, String place,double height, boolean supporting) {
 		super();
@@ -28,7 +30,9 @@ public class Pillar {
 		System.out.println(Shape.CYLINDRICAL);
 		System.out.println(this.height);
 		System.out.println(this.supporting);
-		this.company1.showOff();
+		
+		
+		company.showOff();
 		
 	
 	}
