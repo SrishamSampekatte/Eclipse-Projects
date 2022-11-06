@@ -1,8 +1,7 @@
 package com.xworkz.encaps.thing;
 
 public class TelevisionAlter {
-	
-	
+
 	public void AlterTelevision(Television television) {
 		television.setBrand("KODAK");
 		television.setTelevisionModel("Kodak TV");
@@ -15,7 +14,7 @@ public class TelevisionAlter {
 		television.setUsb(1);
 		television.setBuiltInWifi("yes");
 		television.setWallMounted("yes");
-		
+
 		System.out.println(television.getBrand());
 		System.out.println(television.getTelevisionModel());
 		System.out.println(television.getLaunchYear());
@@ -26,12 +25,11 @@ public class TelevisionAlter {
 		System.out.println(television.getUsb());
 		System.out.println(television.getBuiltInWifi());
 		System.out.println(television.getWallMounted());
-		//boolean hasCreatePermission= Boolean.parseBoolean(request.getParameter("hasCreatePermission")); 
-		//System.out.println(television.get);
-		//System.out.println(television.get);
-		
+		// boolean hasCreatePermission=
+		// Boolean.parseBoolean(request.getParameter("hasCreatePermission"));
+		// System.out.println(television.get);
+		// System.out.println(television.get);
+
 	}
 
 }
-
-

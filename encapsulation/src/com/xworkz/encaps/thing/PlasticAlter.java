@@ -13,7 +13,7 @@ public class PlasticAlter {
 		plastic.setColour("Color");
 		plastic.setHydrobromide(01);
 		plastic.setHydrochloride(5);
-		
+
 		System.out.println(plastic.getName());
 		System.out.println(plastic.getBrandName());
 		System.out.println(plastic.getUsedfor());
@@ -23,7 +23,7 @@ public class PlasticAlter {
 		System.out.println(plastic.getColour());
 		System.out.println(plastic.getHydrobromide());
 		System.out.println(plastic.getHydrochloride());
-		
+
 	}
 
 }
