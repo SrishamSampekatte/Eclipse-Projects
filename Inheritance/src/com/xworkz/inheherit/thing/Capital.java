@@ -9,7 +9,11 @@ public class Capital extends Place {
 
 		Object object = new Object();
 		Place place = new Place();
-
+		
+		
+		Object place2=new Place();
+		Place capital2=new Capital();
+		Object capital3=new Capital();
 
 	}
 

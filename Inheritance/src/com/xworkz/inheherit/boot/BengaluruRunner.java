@@ -6,9 +6,9 @@ public class BengaluruRunner {
 
 	public static void main(String[] args) {
 		System.out.println("Printing final sheet");
-
-		Bengaluru bengaluru = new Bengaluru();
-
+		
+		Bengaluru bengaluru=new Bengaluru();
+		
 		bengaluru.methodObject();
 		bengaluru.methodPlace();
 		bengaluru.methodCapital();
@@ -16,7 +16,8 @@ public class BengaluruRunner {
 		bengaluru.methodMetrocity();
 		bengaluru.methodSilliconCity();
 		bengaluru.methodBengalur();
-
+		
+	
 	}
 
 }
