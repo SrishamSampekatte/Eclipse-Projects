@@ -31,7 +31,7 @@ public class CourtRunner {
 		System.out.println(hc.name);
 		System.out.println(hc.noOfJudges);
 		
-		Court c1=(Court)hc;
+		Court c1=(HighCourt)hc;
 		System.out.println(c1.name);
 		System.out.println(c1.noOfJudges);
 		System.out.println(" ");
