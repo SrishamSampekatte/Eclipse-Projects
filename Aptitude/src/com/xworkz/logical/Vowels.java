@@ -4,8 +4,8 @@ public class Vowels {
 
 	public static void main(String[] args) {
 		
-			String name="Try another method by using different methods";
-			int vCount=0,cCount=0;
+			String name="Hello";
+			int vCount=0;
 			name=name.toLowerCase();
 			for(int i=0;i<name.length();i++) {
 				if(name.charAt(i)=='a'||name.charAt(i)=='e'||name.charAt(i)=='i'||
@@ -13,11 +13,11 @@ public class Vowels {
 					vCount++;
 				}
 				else if(name.charAt(i)>='a'&&name.charAt(i)<='z') {
-					cCount++;
+					;
 				}
 			}
 			System.out.println("Vowels-"+vCount);
-			System.out.println("Consonents-"+cCount);
+			//System.out.println("Consonents-"+cCount);
 		}
 
 	}
