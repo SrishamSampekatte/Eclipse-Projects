@@ -6,4 +6,4 @@ public interface PayingGuest {
 
 	boolean white();
 
-}
+} 
