@@ -71,6 +71,9 @@ import sun.dc.pr.PRError;
 
 public class Event {
 	public void event1() {
+		
+		
+		
 		System.out.println("event 1");
 		throw new RuntimeException();
 	}
@@ -468,7 +471,8 @@ public class Event {
 		throw new MarshalException(null);
 	}
 
-	public void method88() throws NotActiveException {
+	public void method88() throws NotActiveException, NotBoundException {
+		method89();
 		System.out.println("running method88");
 		throw new NotActiveException();
 	}
@@ -499,10 +503,15 @@ public class Event {
 	}
 
 	public void method94() throws TransformerConfigurationException {
+		
 		System.out.println("running method 94");
 		throw new TransformerConfigurationException();
 	}
 
+	
+	
+	
+	
 	public void method95() throws TooManyListenersException {
 		System.out.println("running method 95");
 		throw new TooManyListenersException();
@@ -512,7 +521,11 @@ public class Event {
 		throw new VerifyError();
 	}
 	public void event97() {
-		System.out.println("event 97");
+		try { event98();
+		}catch(StackOverflowError e) {
+		
+		System.out.println("event 97");}
+		
 		throw new UnsatisfiedLinkError();
 	}
 	public void event98() {
@@ -520,7 +533,15 @@ public class Event {
 		throw new StackOverflowError();
 	}
 	public void event99() {
-		System.out.println("event 99");
+		
+		try {event96();
+		method95();
+		method94();
+	
+		}
+		catch(VerifyError|TooManyListenersException|TransformerConfigurationException e) {
+			
+		System.out.println("event 99");}
 		throw new NoSuchFieldError();
 	}
 	public void event100() {
