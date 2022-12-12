@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Trekker;
 import com.xworkz.rules.made.TrekkRule;
+import com.xworkz.rules.rules.Trekker;
 
 public class TrekkRuleRunner {
 

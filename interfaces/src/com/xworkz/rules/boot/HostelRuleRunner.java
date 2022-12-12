@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Hostelites;
 import com.xworkz.rules.made.HostelRule;
+import com.xworkz.rules.rules.Hostelites;
 
 public class HostelRuleRunner {
 

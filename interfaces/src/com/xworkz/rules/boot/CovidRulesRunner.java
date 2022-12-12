@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.People;
 import com.xworkz.rules.made.CovidRule;
+import com.xworkz.rules.rules.People;
 
 public class CovidRulesRunner {
 

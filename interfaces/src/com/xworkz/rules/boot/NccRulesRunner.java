@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Students;
 import com.xworkz.rules.made.NccRules;
+import com.xworkz.rules.rules.Students;
 
 public class NccRulesRunner {
 

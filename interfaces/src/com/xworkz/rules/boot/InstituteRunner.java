@@ -1,10 +1,10 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.DevelopmentInstitute;
-import com.xworkz.rules.follow.TestingInstitute;
-import com.xworkz.rules.follow.XworkzRajajiNagar;
 import com.xworkz.rules.made.Institute;
 import com.xworkz.rules.made.PayingGuest;
+import com.xworkz.rules.rules.DevelopmentInstitute;
+import com.xworkz.rules.rules.TestingInstitute;
+import com.xworkz.rules.rules.XworkzRajajiNagar;
 
 public class InstituteRunner {
 

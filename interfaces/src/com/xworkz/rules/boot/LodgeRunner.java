@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Stranger;
 import com.xworkz.rules.made.Lodge;
+import com.xworkz.rules.rules.Stranger;
 
 public class LodgeRunner {
 

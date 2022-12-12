@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Trainee;
 import com.xworkz.rules.made.Xworkz;
+import com.xworkz.rules.rules.Trainee;
 
 public class XworkzRunner {
 

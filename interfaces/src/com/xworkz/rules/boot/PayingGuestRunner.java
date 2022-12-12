@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.GoldenVilla;
 import com.xworkz.rules.made.PayingGuest;
+import com.xworkz.rules.rules.GoldenVilla;
 
 public class PayingGuestRunner {
 

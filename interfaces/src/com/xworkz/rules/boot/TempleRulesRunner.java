@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Bhaktas;
 import com.xworkz.rules.made.TempleRules;
+import com.xworkz.rules.rules.Bhaktas;
 
 public class TempleRulesRunner {
 

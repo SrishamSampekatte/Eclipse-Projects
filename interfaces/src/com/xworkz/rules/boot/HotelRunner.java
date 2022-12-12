@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Customer;
 import com.xworkz.rules.made.Hotel;
+import com.xworkz.rules.rules.Customer;
 
 public class HotelRunner {
 

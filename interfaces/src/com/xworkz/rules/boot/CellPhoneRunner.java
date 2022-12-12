@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.User;
 import com.xworkz.rules.made.CellPhone;
+import com.xworkz.rules.rules.User;
 
 public class CellPhoneRunner {
 

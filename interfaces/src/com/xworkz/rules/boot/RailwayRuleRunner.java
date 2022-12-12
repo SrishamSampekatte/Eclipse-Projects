@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Passangers;
 import com.xworkz.rules.made.RailwayRule;
+import com.xworkz.rules.rules.Passangers;
 
 public class RailwayRuleRunner {
 

@@ -1,7 +1,7 @@
 package com.xworkz.rules.boot;
 
-import com.xworkz.rules.follow.Student;
 import com.xworkz.rules.made.SchoolRule;
+import com.xworkz.rules.rules.Student;
 
 public class SchoolRuleRunner {
 
