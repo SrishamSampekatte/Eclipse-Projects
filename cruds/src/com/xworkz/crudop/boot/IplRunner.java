@@ -25,7 +25,8 @@ public class IplRunner {
 		team1.setDefeats(86);
 		repo.iplTeam(team1);
 		System.out.println(repo.total());
-		team1.showOff();
+		//team1.showOff();
+		repo.toString();
 
 		System.out.println(" ");
 

@@ -17,7 +17,7 @@ public class IplTeamImpli implements IplRepository {
 		}
 		this.teams[this.currentIndex] = dto;
 		currentIndex++;
-		return false;
+		return true;
 	}
 
 	@Override
