@@ -5,12 +5,20 @@ import java.time.LocalDateTime;
 
 public abstract class AbstractAuditDTO implements Serializable {
 	private String CreatedBy;
-	private LocalDateTime CreatedDate;
+	private LocalDateTime CreatedDate = LocalDateTime.now();
 	private String UpdatedBy;
-	private LocalDateTime UpdatedDate;
+	private LocalDateTime UpdatedDate = LocalDateTime.now();
 
 	public AbstractAuditDTO() {
 		System.out.println("Calling no arguent constructor of AbstractAuditDTO");
+	}
+
+	public AbstractAuditDTO(String createdBy, String updatedBy) {
+		super();
+		CreatedBy = createdBy;
+
+		UpdatedBy = updatedBy;
+
 	}
 
 	@Override
@@ -49,14 +57,6 @@ public abstract class AbstractAuditDTO implements Serializable {
 
 	public void setUpdatedDate(LocalDateTime updatedDate) {
 		UpdatedDate = updatedDate;
-	}
-
-	public void showOff() {
-		System.out.println(CreatedBy);
-		System.out.println(CreatedDate);
-		System.out.println(UpdatedBy);
-		System.out.println(UpdatedDate);
-
 	}
 
 }

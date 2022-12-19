@@ -1,28 +1,22 @@
-package com.xworkz.crudopp.dto;
+package com.xworkz.crudhandling.dto;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 public class AbstaractAuditDTO implements Serializable {
 	private String createdBy;
-	private LocalDateTime createdDate=LocalDateTime.now();
+	private LocalDateTime createdDate = LocalDateTime.now();
 	private String updatedBy;
-	private LocalDateTime updatedDate=LocalDateTime.now();
+	private LocalDateTime updatedDate = LocalDateTime.now();
 
 	public AbstaractAuditDTO() {
 		System.out.println("Created default constructor of AbstarctAuditDTO");
 	}
-	
-	
 
-	public AbstaractAuditDTO(String createdBy, LocalDateTime createdDate, String updatedBy, LocalDateTime updatedDate) {
+	public AbstaractAuditDTO(String createdBy, String updatedBy) {
 		this.createdBy = createdBy;
-		this.createdDate = createdDate;
 		this.updatedBy = updatedBy;
-		this.updatedDate = updatedDate;
 	}
-
-
 
 	@Override
 	public String toString() {
