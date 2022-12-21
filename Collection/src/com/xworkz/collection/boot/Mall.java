@@ -48,6 +48,7 @@ public class Mall {
 		collection.add("Alpha One");
 		collection.add("Fun Republic");
 		collection.add("Final Words");
+		
 
 		System.out.println(collection);
 		System.out.println(collection.size());
