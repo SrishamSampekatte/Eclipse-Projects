@@ -125,24 +125,24 @@ public class Dams {
 		System.out.println(" Dams in India ");
 
 		Collection<String> damsInIndia = new ArrayList<String>();
-		damsOfIndia.addAll(karnataka);
-		damsOfIndia.addAll(telangana);
-		damsOfIndia.addAll(andraPradesh);
-		damsOfIndia.addAll(gujarat);
-		damsOfIndia.addAll(himachalPradesh);
-		damsOfIndia.addAll(jammuAndKashmir);
-		damsOfIndia.addAll(jharkhand);
-		damsOfIndia.addAll(kerala);
-		damsOfIndia.addAll(madhyaPradesh);
-		damsOfIndia.addAll(maharashtra);
-		damsOfIndia.addAll(odisha);
-		damsOfIndia.addAll(tamilNadu);
-		damsOfIndia.addAll(uttarakhand);
-		damsOfIndia.addAll(goa);
-		damsOfIndia.addAll(meghalaya);
-		System.out.println("No of dams in India " + damsOfIndia.size());
+		damsInIndia.addAll(karnataka);
+		damsInIndia.addAll(telangana);
+		damsInIndia.addAll(andraPradesh);
+		damsInIndia.addAll(gujarat);
+		damsInIndia.addAll(himachalPradesh);
+		damsInIndia.addAll(jammuAndKashmir);
+		damsInIndia.addAll(jharkhand);
+		damsInIndia.addAll(kerala);
+		damsInIndia.addAll(madhyaPradesh);
+		damsInIndia.addAll(maharashtra);
+		damsInIndia.addAll(odisha);
+		damsInIndia.addAll(tamilNadu);
+		damsInIndia.addAll(uttarakhand);
+		damsInIndia.addAll(goa);
+		damsInIndia.addAll(meghalaya);
+		System.out.println("No of dams in India " + damsInIndia.size());
 
-		Iterator<String> element = damsOfIndia.iterator();
+		Iterator<String> element = damsInIndia.iterator();
 		while (element.hasNext()) {
 			String dams = element.next();
 			if (dams.startsWith("T")) {
@@ -150,7 +150,7 @@ public class Dams {
 			}
 		}
 
-		Iterator<String> element2 = damsOfIndia.iterator();
+		Iterator<String> element2 = damsInIndia.iterator();
 		while (element2.hasNext()) {
 			String dams = element2.next();
 			if (dams.endsWith("ra")) {
@@ -158,7 +158,7 @@ public class Dams {
 			}
 		}
 
-		Iterator<String> element3 = damsOfIndia.iterator();
+		Iterator<String> element3 = damsInIndia.iterator();
 		while (element3.hasNext()) {
 			String dams = element3.next();
 			if (dams.length() > 15) {
@@ -166,14 +166,14 @@ public class Dams {
 			}
 		}
 
-		Iterator<String> element4 = damsOfIndia.iterator();
+		Iterator<String> element4 = damsInIndia.iterator();
 		while (element4.hasNext()) {
 			String dams = element4.next();
 			System.out.println(dams.toUpperCase());
 			System.out.println(dams.toLowerCase());
 
 		}
-		Iterator<String> element5 = damsOfIndia.iterator();
+		Iterator<String> element5 = damsInIndia.iterator();
 		while (element5.hasNext()) {
 			String dams = element5.next();
 			String rev = "";
@@ -187,15 +187,15 @@ public class Dams {
 			}
 		}
 
-		System.out.println("Indian dams before remove " + damsOfIndia.size());
-		Iterator<String> element6 = damsOfIndia.iterator();
+		System.out.println("Indian dams before remove " + damsInIndia.size());
+		Iterator<String> element6 = damsInIndia.iterator();
 		while (element6.hasNext()) {
 			String dams = element6.next();
 			if (dams.contains("p")) {
 				element6.remove();
 			}
 		}
-		System.out.println("Indian dams after  remove " + damsOfIndia.size());
+		System.out.println("Indian dams after  remove " + damsInIndia.size());
 
 	}
 
