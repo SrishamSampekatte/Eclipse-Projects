@@ -38,10 +38,10 @@ public class SanitizerRunner {
 		Iterator<SanitzerDTO> itr = collection.iterator();
 		while (itr.hasNext()) {
 			SanitzerDTO element = itr.next();
-			// System.out.println(element);
-			// if (element.getId() > 5) {
-			// System.out.println(element.getBrand() + " Price is :" + element.getId());
-			// }
+			 System.out.println(element);
+			 if (element.getId() > 5) {
+			 System.out.println(element.getBrand() + " Price is :" + element.getId());
+			 }
 		}
 
 		Iterator<SanitzerDTO> itr2 = collection.iterator();

@@ -44,7 +44,7 @@ public class IplRunner {
 		team2.setDefeats(118);
 		repo.iplTeam(team2);
 		System.out.println(repo.total());
-		team2.showOff();
+	
 
 		System.out.println(" ");
 
@@ -62,7 +62,7 @@ public class IplRunner {
 		team3.setDefeats(117);
 		repo.iplTeam(team3);
 		System.out.println(repo.total());
-		team3.showOff();
+	
 
 		System.out.println(" ");
 
@@ -80,7 +80,7 @@ public class IplRunner {
 		team4.setDefeats(3);
 		repo.iplTeam(team4);
 		System.out.println(repo.total());
-		team4.showOff();
+		
 
 		System.out.println(" ");
 
@@ -98,7 +98,7 @@ public class IplRunner {
 		team5.setDefeats(127);
 		repo.iplTeam(team5);
 		System.out.println(repo.total());
-		team5.showOff();
+	
 
 		System.out.println(" ");
 
@@ -116,7 +116,7 @@ public class IplRunner {
 		team6.setDefeats(131);
 		repo.iplTeam(team6);
 		System.out.println(repo.total());
-		team6.showOff();
+		
 
 		System.out.println(" ");
 
@@ -134,7 +134,7 @@ public class IplRunner {
 		team7.setDefeats(130);
 		repo.iplTeam(team7);
 		System.out.println(repo.total());
-		team7.showOff();
+		
 
 		System.out.println(" ");
 
@@ -152,7 +152,7 @@ public class IplRunner {
 		team8.setDefeats(128);
 		repo.iplTeam(team8);
 		System.out.println(repo.total());
-		team8.showOff();
+		
 
 		System.out.println(" ");
 
@@ -170,7 +170,7 @@ public class IplRunner {
 		team9.setDefeats(129);
 		repo.iplTeam(team9);
 		System.out.println(repo.total());
-		team9.showOff();
+		
 
 		System.out.println(" ");
 
@@ -188,7 +188,7 @@ public class IplRunner {
 		team10.setDefeats(12);
 		repo.iplTeam(team10);
 		System.out.println(repo.total());
-		team10.showOff();
+	
 
 		System.out.println(" ");
 

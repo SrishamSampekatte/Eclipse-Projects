@@ -1,23 +1,27 @@
 package com.xworkz.collection.boot;
 
 import java.util.ArrayList;
-import java.util.Collection;
+
 import java.util.Iterator;
+import java.util.List;
+
+
 
 public class Animal {
 
 	public static void main(String[] args) {
-		Collection<String> animal = new ArrayList<String>();
-		animal.add("Dog");
-		animal.add("Cat");
-		animal.add("Cow");
-		animal.add("Tiger");
-		animal.add("Cheeth");
-		animal.add("Bull");
-		animal.add("Lion");
-		animal.add("Tusker");
-		animal.add("Wild Boar");
-		animal.add("Camel");
+		//Collection<String> animal = new ArrayList<String>();
+		
+		List<String> animal = new ArrayList<String>();
+
+		
+		animal.add("sa");;
+		
+		animal.add("ca");
+		animal.add("da");
+		
+		animal.add(2,"ga");
+		
 
 		System.out.println(animal.size());
 		System.out.println("Applying for loop");
@@ -33,6 +37,8 @@ public class Animal {
 			String ref = element.next();
 			System.out.println(ref);
 		}
+		
+		
 	}
 
 }
