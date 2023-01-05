@@ -1,0 +1,6 @@
+package com.xworkz.streams.dto;
+
+public enum WeaponType {
+ARTILLERY,BIOLOGICAL_WEAPONRY,CHEMICAL_WEAPONRY,COMBAT_WEAPONS,BOMBS,MISSILES;
+
+}

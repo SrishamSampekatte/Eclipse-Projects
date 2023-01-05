@@ -3,11 +3,13 @@ package com.xworkz.collection.boot;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class Companies {
 
 	public static void main(String[] args) {
-		Collection<String> companies = new ArrayList<String>();
+		List<String> companies = new ArrayList<String>();
 		companies.add("Micro Soft");
 		companies.add("Google");
 		companies.add("Infosys");
@@ -28,6 +30,8 @@ public class Companies {
 		companies.add("Lowe");
 		companies.add("L and T ");
 		companies.add("Wipro");
+		
+		companies.listIterator();
 
 		System.out.println(companies.size());
 
@@ -39,11 +43,13 @@ public class Companies {
 
 		System.out.println("Running iterator");
 
-		Iterator<String> element = companies.iterator();
-		while (element.hasNext()) {
-			String reference = element.next();
-			System.out.println(reference);
+		ListIterator<String> element = companies.listIterator();
+	
+		while(element.hasPrevious()) {
+			String elementt=element.previous();
+			System.out.println(elementt);
 		}
+		
 
 	}
 
