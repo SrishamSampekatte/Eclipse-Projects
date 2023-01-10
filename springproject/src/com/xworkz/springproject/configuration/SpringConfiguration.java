@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan("com.xworkz.springproject")
-
 public class SpringConfiguration {
+	
 	@Bean("name")
 	public String Name() {
 		System.out.println(" Registered name with spring");
@@ -201,7 +201,7 @@ public class SpringConfiguration {
 		list.add(13);
 		list.add(14);
 		list.add(15);
-		System.out.println(list);
+		//System.out.println(list);
 		return (ArrayList) list;
 	}
 
@@ -213,7 +213,7 @@ public class SpringConfiguration {
 		map.put("Mathimane", 577418);
 		map.put("Banglore", 001);
 		map.put("Rajajinagar", 002);
-		System.out.println(map);
+		//System.out.println(map);
 		return map;
 	}
 
