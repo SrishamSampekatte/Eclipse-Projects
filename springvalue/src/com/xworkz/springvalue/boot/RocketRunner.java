@@ -24,9 +24,9 @@ public class RocketRunner {
 		Rocket refOfRocket2 = container.getBean("pegasus", Rocket.class);
 
 		System.out.println(refOfRocket2);
-		refOfRocket2.setName("Pegasus");
-		refOfRocket2.setCountry("USA");
-		refOfRocket2.setBudget(456);
+		//refOfRocket2.setName("Pegasus");
+		//refOfRocket2.setCountry("USA");
+		//refOfRocket2.setBudget(456);
 		System.out.println(refOfRocket2.getName());
 		System.out.println(refOfRocket2.getCountry());
 		System.out.println(refOfRocket2.getBudget());

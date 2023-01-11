@@ -20,6 +20,7 @@ public class SpringConfiguration {
 	public Rocket pegasus() {
 		System.out.println("Created pegasus rocket using Bean");
 		Rocket rocket = new Rocket();
+		
 		return rocket;
 	}
 
