@@ -134,6 +134,8 @@ public class RocketRunner {
 		System.out.println(refOfSeason4.getStartingMonth());
 		System.out.println(refOfSeason4.getDuration());
 
+		
+		
 	}
 
 }

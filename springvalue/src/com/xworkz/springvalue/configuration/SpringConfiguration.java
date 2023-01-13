@@ -23,6 +23,10 @@ public class SpringConfiguration {
 		
 		return rocket;
 	}
+     @Bean 
+     public String name(String name) {
+    	 return name;
+     }
 
 	@Bean
 	public Rocket aryabhata() {
@@ -35,6 +39,7 @@ public class SpringConfiguration {
 	public Rocket insat() {
 		System.out.println("Created pegasus rocket using Bean");
 		Rocket rocket = new Rocket();
+		//rocket.setName(" null");
 		return rocket;
 	}
 
