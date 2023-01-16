@@ -23,7 +23,7 @@ public class MapExample {
 		map.put("PRPg", 6500D);
 		
 
-		Map<String> key = map.keySet();
+		Set<String> key = map.keySet();
 		key.forEach(e -> System.out.println(e));
 		System.out.println("===========================");
 		Collection<Double> value = map.values();
