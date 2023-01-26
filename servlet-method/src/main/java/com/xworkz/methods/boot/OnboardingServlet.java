@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(loadOnStartup = 2, urlPatterns = "/onboarding")
+@WebServlet(loadOnStartup = 7, urlPatterns = "/onboarding")
 public class OnboardingServlet extends HttpServlet {
 	public OnboardingServlet() {
 		System.out.println("Created" + getClass().getSimpleName());
@@ -41,7 +41,7 @@ public class OnboardingServlet extends HttpServlet {
 		System.out.println("Put from Onboarding...");
 		String ref1 = "Lemon Juice,GobhiManchuri";
 		PrintWriter writer2 = resp.getWriter();
-		// ServletOutputStream write = resp.getOutputStream();
+		// write = resp.getOutputStream();
 		writer2.print(ref1);
 		resp.setContentType("text/plain");
 
