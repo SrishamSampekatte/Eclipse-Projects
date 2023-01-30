@@ -15,7 +15,7 @@ public class Animal {
 		List<String> animal = new ArrayList<String>();
 
 		
-		animal.add("sa");;
+		animal.add("sa");
 		
 		animal.add("ca");
 		animal.add("da");
@@ -37,6 +37,9 @@ public class Animal {
 			String ref = element.next();
 			System.out.println(ref);
 		}
+		
+		
+		
 		
 		
 	}
