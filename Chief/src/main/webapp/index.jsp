@@ -22,15 +22,13 @@
 				class="d-inline-block align-text-top"><img
 				src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
 				alt="" height="48" width="80"> </a>
-				<ul>
-				<li style="display: inline-block;padding: 20px;">
-					<a href="egg.jsp" class="col-lg-2 col-sm-2">Egg</a>
-					<a href="CM.jsp" class="col-lg-2 col-sm-2">CM</a>
-					<li style="display: inline-block;">
-				</ul>
-			</div>
+			<ul>
+				<li style="display: inline-block; padding: 20px;"><a
+					href="CM.jsp" class="col-lg-2 col-sm-2">CM</a>
+				<li style="display: inline-block;">
+			</ul>
+		</div>
 	</nav>
 	<h1>Welcome to Home Page</h1>
-
 </body>
 </html>
