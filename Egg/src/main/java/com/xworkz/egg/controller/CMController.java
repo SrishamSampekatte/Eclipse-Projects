@@ -34,6 +34,6 @@ public class CMController {
 		} else {
 			System.out.println("validation success display success messages");
 		}
-		return "CM.jsp";
+		return "CM";
 	}
 }
