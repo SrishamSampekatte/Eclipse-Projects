@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,30 +29,31 @@
 	</nav>
 	<h1>Welcome to Valentine Data saving....</h1>
 	<c:forEach items="${errors}" var="e">
-		<span style="color: red;">${e.message}</span></br>
+		<span style="color: red;">${e.message}</span>
+		</br>
 	</c:forEach>
 
 	<form action="valentine" method="post">
 		<div class="mb-3">
 			<label for="formFile" class="form-label">Name</label> <input
 				type="text" class="form-control" name="name" id="formFile"
-				placeholder="Enter your Name" />
+				placeholder="Enter your Name" value="${dto.name}" />
 		</div>
 		<div class="mb-3">
 			Valentine Name<label for="formFile" class="form-label">
 				Valentine Name</label> <input type="text" class="form-control"
 				name="valentineName" id="formFile"
-				placeholder="Enter your Valentine Name" />
+				placeholder="Enter your Valentine Name" value="${dto.valentineName}" />
 		</div>
 		Select Places <select class="form-select"
 			aria-label="Default select example" name="place">
-			<option value="">Select places</option>
+			<option value="${dto.place}">Select places</option>
 			<c:forEach items="${places}" var="p">
 				<option value="${p}">${p}</option>
 			</c:forEach>
 		</select> Gift <select class="form-select" aria-label="Default select example"
 			name="gift">
-			<option value="">Select Gift</option>
+			<option value="${dto.gift}">Select Gift</option>
 			<c:forEach items="${gifts}" var="g">
 				<option value="${g}">${g}</option>
 			</c:forEach>

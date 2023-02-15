@@ -52,6 +52,7 @@ public class ValentineController {
 		model.addAttribute("places", places);
 		model.addAttribute("gifts", gifts);
 		model.addAttribute("errors", violations);
+		model.addAttribute("dto", dto);
 
 		return "Valentine";
 

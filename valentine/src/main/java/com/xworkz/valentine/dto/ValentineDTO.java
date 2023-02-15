@@ -3,6 +3,8 @@ package com.xworkz.valentine.dto;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import org.hibernate.dialect.MySQL55Dialect;
+
 import lombok.Data;
 
 @Data
@@ -15,5 +17,4 @@ public class ValentineDTO {
 	private String place;
 	@NotBlank(message = "Gift can not be blank")
 	private String gift;
-
 }
