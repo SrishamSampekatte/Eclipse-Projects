@@ -19,7 +19,7 @@ public class FindRegionAndMainGodByNameAndId {
 		System.out.println(array[1]);
 
 		manager.close();
-
+//arrey index bound exception
 	}
 
 }
