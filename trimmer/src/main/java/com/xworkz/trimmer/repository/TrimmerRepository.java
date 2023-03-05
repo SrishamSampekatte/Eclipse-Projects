@@ -15,4 +15,8 @@ public interface TrimmerRepository {
 	default List<TrimmerEntity> findByCompany(String company) {
 		return Collections.emptyList();
 	}
+	boolean update(TrimmerEntity entity);
+	
+	boolean delete(int id);
+
 }

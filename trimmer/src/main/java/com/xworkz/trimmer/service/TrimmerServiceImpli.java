@@ -87,11 +87,51 @@ public class TrimmerServiceImpli implements TrimmerService {
 			}
 			System.out.println("Size of the dtos " + listOfDto.size());
 			System.out.println("Size of entities" + entities.size());
+			return listOfDto;
 		} else {
 			System.out.println("Company is invalid");
 		}
 
 		return TrimmerService.super.findByCompany(company);
+	}
+
+	@Override
+	public Set<ConstraintViolation<TrimmerDTO>> validateAndUpdate(TrimmerDTO dto) {
+		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+		Validator validator = factory.getValidator();
+		Set<ConstraintViolation<TrimmerDTO>> violations = validator.validate(dto);
+		if (violations != null && !violations.isEmpty()) {
+			System.err.println("Violations in DTO" + dto);
+			return violations;
+		} else {
+			System.out.println("Violations are not there in dto and can save data");
+			TrimmerEntity entity = new TrimmerEntity();
+			entity.setCompany(dto.getCompany());
+			entity.setColor(dto.getColor());
+			entity.setType(dto.getType());
+			entity.setSpeed(dto.getSpeed());
+			entity.setPrice(dto.getPrice());
+			entity.setId(dto.getId());
+			boolean update = this.repository.update(entity);
+			System.out.println(entity);
+			System.out.println("Enity data is updated" + update);
+			return Collections.emptySet();
+		}
+
+	}
+
+	@Override
+	public boolean validateAndDelete(int id) {
+		// TODO Auto-generated method stub
+		System.out.println("Running validateAndDelete");
+		if (id < 0) {
+			return false;
+		} else {
+			boolean deleted = this.repository.delete(id);
+			System.out.println("delete" + deleted);
+			return deleted;
+		}
+
 	}
 
 }

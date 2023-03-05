@@ -13,12 +13,11 @@ import org.springframework.stereotype.Repository;
 import com.xworkz.trimmer.entity.TrimmerEntity;
 
 @Repository
-public class TrimmerRepoImpl implements TrimmerRepository {
-
+public class TrimmerRepositoryImpli implements TrimmerRepository {
 	@Autowired
 	private EntityManagerFactory entityManagerFactory;
 
-	public TrimmerRepoImpl() {
+	public TrimmerRepositoryImpli() {
 		System.out.println("Created " + this.getClass().getSimpleName());
 	}
 
@@ -32,7 +31,7 @@ public class TrimmerRepoImpl implements TrimmerRepository {
 		transaction.commit();
 		manager.close();
 
-		return false;
+		return true;
 	}
 
 	@Override
@@ -61,4 +60,34 @@ public class TrimmerRepoImpl implements TrimmerRepository {
 		}
 	}
 
+	@Override
+	public boolean update(TrimmerEntity entity) {
+		EntityManager manager = this.entityManagerFactory.createEntityManager();
+		try {
+			EntityTransaction transaction = manager.getTransaction();
+			transaction.begin();
+			manager.merge(entity);
+			transaction.commit();
+			return true;
+		} finally {
+			manager.close();
+		}
+
+	}
+	@Override
+	public boolean delete(int id) {
+		System.out.println("Running delete");
+		EntityManager entityManager = this.entityManagerFactory.createEntityManager();
+		try {
+			EntityTransaction transaction = entityManager.getTransaction();
+			TrimmerEntity delete = entityManager.find(TrimmerEntity.class, id);
+			transaction.begin();
+			entityManager.remove(delete);
+			transaction.commit();
+			return true;
+		} finally {
+			entityManager.close();
+		}
+	}
+	
 }

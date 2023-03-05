@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,6 +33,8 @@ h1 {
 					href="trimmer" class="col-lg-2 col-sm-2">Register</a>
 				<li style="display: inline-block;"><a href="TrimmerSearch.jsp"
 					class="col-lg-2 col-sm-2">Search</a>
+				<li style="display: inline-block;"><a href="CompanySearch.jsp"
+					class="col-lg-2 col-sm-2">find company</a>
 			</ul>
 		</div>
 	</nav>

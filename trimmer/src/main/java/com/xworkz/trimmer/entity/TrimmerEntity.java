@@ -6,7 +6,6 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-
 import lombok.Data;
 
 @Data
@@ -14,6 +13,7 @@ import lombok.Data;
 @Table(name = "trimmer_table")
 @NamedQuery(name = "findByCompany", query = "select entity from TrimmerEntity entity where entity.company=:comp")
 public class TrimmerEntity {
+
 	@Id
 	@Column(name = "t_id")
 	private int id;
@@ -26,6 +26,6 @@ public class TrimmerEntity {
 	@Column(name = "t_speed")
 	private Integer speed;
 	@Column(name = "t_price")
-	private Integer price;
+	private Double price;
 
 }

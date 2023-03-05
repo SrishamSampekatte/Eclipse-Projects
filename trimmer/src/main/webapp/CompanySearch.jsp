@@ -6,6 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>X-workz</title>
+
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -33,15 +34,36 @@
 	<h3>
 		<span style="color: red">${message}</span>
 	</h3>
-	<form action="search" method="get">
-		Search By Id<input type="text" name="id" /> <input type="submit"
-			value="search" />
+	<form action="searchbycompany" method="get">
+		Search By company<input type="text" name="company" /> <input
+			type="submit" value="search" />
 	</form>
 	<div>
-		<h4>Search Results</h4>
-		ID:${dto.id}<br> Company:${dto.company}<br>
-		Color:${dto.color}<br> Price:${dto.price}<br>
-		Type:${dto.type}<br> Speed:${dto.speed}
+		<table class="table table-bordered">
+			<tr>
+				<th>ID</th>
+				<th>Company</th>
+				<th>Color</th>
+				<th>Type</th>
+				<th>Speed</th>
+				<th>Price</th>
+				<th>Update</th>
+				<th>delete</th>
+			</tr>
+			<c:forEach items="${list}" var="t">
+				<tr>
+					<td>${t.id}</td>
+					<td>${t.company}</td>
+					<td>${t.color}</td>
+					<td>${t.type}</td>
+					<td>${t.speed}</td>
+					<td>${t.price}</td>
+					<td><a href="update?id=${t.id}">Edit</a></td>
+					<td><a href="delete?id=${t.id}">delete</a></td>
+
+				</tr>
+			</c:forEach>
+		</table>
 	</div>
 
 </body>

@@ -31,52 +31,61 @@ h1 {
 				src="https://www.shopdealclue.com/image/cache/catalog/PHILIPS-BT123015-Beard-Trimmer-Trimmer-30-min--Runtime-2-Length-Settings-Green-BT123015BeardTrimmer-459-600x600.jpeg"
 				alt="" height="130" width="150"> </a>
 			<ul>
-				<li style="display: inline-block; padding: 20px;"><a
-					href="index.jsp" class="col-lg-2 col-sm-2">Home Page</a>
+				<li>style="display: inline-block; padding: 20px;"><a
+					href="index.jsp" class="col-lg-2 col-sm-2">Home Page</a></li>
 			</ul>
 		</div>
 	</nav>
 
-	<h1>Welcome to Trimmer Registration Form</h1>
+	<h1>Welcome to Trimmer Update Form</h1>
+
 	<c:forEach items="${errors}" var="e">
 		<br>
 		<span style="color: red;">${e.message}</span>
 	</c:forEach>
 
-	<form action="trimmer" method="post">
-	
+	<form action="update" method="post">
+		<div class="mb-3">
+			<label for="formFile" class="form-label">Id</label> <input
+				type="text" class="form-control" readonly="readonly" name="id"
+				value="${dto.id}" />
+		</div>
 		<div class="mb-3">
 			<label for="formFile" class="form-label">Company</label> <input
 				type="text" class="form-control" name="company" id="formFile"
-				required="required" placeholder="Enter company" value="${dto.company}" />
+				required="required" placeholder="Enter company"
+				value="${dto.company}" />
 		</div>
 		Select Color <select class="form-select"
 			aria-label="Default select example" name="color" required="required">
-			<option selected value="">Select Color</option>
-			<c:forEach items="${dto.colors}" var="c">
+			<option selected value="${dto.color}">${dto.color}</option>
+			<c:forEach items="${colors}" var="c">
 				<option value="${c}">${c}</option>
-			</c:forEach>
-		</select> Select Type <select class="form-select"
-			aria-label="Default select example" name="type" required="required">
-			<option selected value="">Select Type</option>
-			<c:forEach items="${dto.types}" var="t">
-				<option value="${t}">${t}</option>
 			</c:forEach>
 		</select> Select Speed <select class="form-select"
 			aria-label="Default select example" name="speed" required="required">
-			<option selected value="">Select Speed</option>
-			<c:forEach items="${dto.speeds}" var="s">
+			<option selected value="${dto.speed}">${dto.speed}</option>
+			<c:forEach items="${speeds}" var="s">
 				<option value="${s}">${s}</option>
 			</c:forEach>
+		</select> Select Type <select class="form-select"
+			aria-label="Default select example" name="type" required="required">
+			<option selected value="${dto.type}">${dto.type}</option>
+			<c:forEach items="${types}" var="t">
+				<option value="${t}">${t}</option>
+			</c:forEach>
 		</select>
+		
 		<div class="mb-3">
 			<label for="formFile" class="form-label">Price</label> <input
-				type="text" class="form-control" name="price" id="formFile"
-				required="required" placeholder="Enter Price" value="${dto.price}" />
+				type="number" class="form-control" name="price" id="formFile"
+				required="required" placeholder="Enter price"
+				value="${dto.price}" />
 		</div>
 
-		<input type="submit" value="Save" class="btn btn-primary" />
-
+		
+		<input type="submit" value="Update" class="btn btn-primary" />
 	</form>
+
 </body>
 </html>

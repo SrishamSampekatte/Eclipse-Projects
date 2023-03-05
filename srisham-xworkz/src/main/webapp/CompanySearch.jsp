@@ -33,15 +33,31 @@
 	<h3>
 		<span style="color: red">${message}</span>
 	</h3>
-	<form action="search" method="get">
-		Search By Id<input type="text" name="id" /> <input type="submit"
-			value="search" />
+	<form action="searchbycompany" method="get">
+		Search By company<input type="text" name="company" /> <input
+			type="submit" value="search" />
 	</form>
 	<div>
-		<h4>Search Results</h4>
-		ID:${dto.id}<br> Company:${dto.company}<br>
-		Color:${dto.color}<br> Price:${dto.price}<br>
-		Type:${dto.type}<br> Speed:${dto.speed}
+		<table class="table table-bordered">
+			<tr>
+				<th>ID</th>
+				<th>Company</th>
+				<th>Color</th>
+				<th>Type</th>
+				<th>Speed</th>
+				<th>Price</th>
+			</tr>
+			<c:forEach items="${list}" var="t">
+				<tr>
+					<td>${dto.id}</td>
+					<td>${dto.company}</td>
+					<td>${dto.color}</td>
+					<td>${dto.type}</td>
+					<td>${dto.speed}</td>
+					<td>${dto.price}</td>
+				</tr>
+			</c:forEach>
+		</table>
 	</div>
 
 </body>
