@@ -31,7 +31,7 @@ public class TrimmerRepositoryImpli implements TrimmerRepository {
 		transaction.commit();
 		manager.close();
 
-		return true;
+		return false;
 	}
 
 	@Override
@@ -87,6 +87,38 @@ public class TrimmerRepositoryImpli implements TrimmerRepository {
 			return true;
 		} finally {
 			entityManager.close();
+		}
+	}
+	
+	@Override
+	public List<TrimmerEntity> findByAll() {
+		EntityManager manager = this.entityManagerFactory.createEntityManager();
+		try {
+			Query query = manager.createNamedQuery("findByAll");
+			System.out.println("Query:" + query);
+			List<TrimmerEntity> list = query.getResultList();
+			System.out.println("total list found in repo" + list.size());
+			return list;
+		} finally {
+			manager.close();
+			System.out.println("released the connection...");
+		}
+	}
+
+	@Override
+	public List<TrimmerEntity> findByTwoProperties(String name, String color) {
+		EntityManager manager = this.entityManagerFactory.createEntityManager();
+		try {
+			Query query = manager.createNamedQuery("findByTwoProperties");
+			System.out.println("Query:" + query);
+			query.setParameter("nameby", name);
+			query.setParameter("colorby", color);
+			List<TrimmerEntity> list = query.getResultList();
+			System.out.println("total list found in repo" + list.size());
+			return list;
+		} finally {
+			manager.close();
+			System.out.println("released the connection...");
 		}
 	}
 	

@@ -61,7 +61,7 @@ public class TrimmerController {
 		Set<ConstraintViolation<TrimmerDTO>> violations = this.service.validateAndSave(dto);
 		if (violations.isEmpty()) {
 			System.out.println("No violations in controller go to success page");
-			return "Trimmer";
+			return "TrimmerRegistrationSucess";
 		}
 		model.addAttribute("types", types);
 		model.addAttribute("colors", colors);
@@ -116,6 +116,35 @@ public class TrimmerController {
 		} else {
 			model.addAttribute("errors", "id not found");
 		}
-		return "CompanySearch";
+		return "DeleteSucess";
+	}
+	@GetMapping("/searchbyall")
+	public String onSearchByAll(Model model) {
+		System.out.println("running onsearchByAll controller");
+		List<TrimmerDTO> list = this.service.findByAll();
+
+		if (list != null) {
+
+			model.addAttribute("list", list);
+			model.addAttribute("message", "found successfully");
+		} else {
+			model.addAttribute("message", "Data not found");
+		}
+		return "SearchAll";
+	}
+
+	@PostMapping("/searchtwoproperties")
+	public String onSearchTwoProperties(@RequestParam String company, @RequestParam String color, Model model) {
+		System.out.println("running onsearchByName controller" + "property1" + company + "property2" + color);
+		List<TrimmerDTO> list = this.service.findByTwoProperties(company, color);
+
+		if (list != null) {
+
+			model.addAttribute("list", list);
+			model.addAttribute("message", "found successfully");
+		} else {
+			model.addAttribute("message", "Data not found");
+		}
+		return "SearchTwoProperties";
 	}
 }

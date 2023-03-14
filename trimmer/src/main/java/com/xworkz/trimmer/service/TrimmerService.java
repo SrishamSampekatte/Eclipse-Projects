@@ -20,10 +20,17 @@ public interface TrimmerService {
 	}
 
 	Set<ConstraintViolation<TrimmerDTO>> validateAndUpdate(TrimmerDTO dto);
-	
-	
+
 	default boolean validateAndDelete(int id) {
 		return false;
+	}
+
+	default List<TrimmerDTO> findByAll() {
+		return Collections.emptyList();
+	}
+
+	default List<TrimmerDTO> findByTwoProperties(String company, String color) {
+		return Collections.emptyList();
 	}
 
 }

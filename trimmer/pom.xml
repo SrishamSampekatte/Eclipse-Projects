@@ -5,7 +5,7 @@
 	<groupId>com.xworkz.trimmer</groupId>
 	<artifactId>trimmer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+
 	<properties>
 		<lombok.lib.version>1.18.24</lombok.lib.version>
 		<spring.lib.version>5.3.24</spring.lib.version>

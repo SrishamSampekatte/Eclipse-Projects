@@ -24,22 +24,27 @@ h1 {
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"
 				class="d-inline-block align-text-top"><img
 				src="https://www.shopdealclue.com/image/cache/catalog/PHILIPS-BT123015-Beard-Trimmer-Trimmer-30-min--Runtime-2-Length-Settings-Green-BT123015BeardTrimmer-459-600x600.jpeg"
 				alt="" height="130" width="150"> </a>
-			<ul>
-				<li>style="display: inline-block; padding: 20px;"><a
-					href="index.jsp" class="col-lg-2 col-sm-2">Home Page</a></li>
-				<li>style="display: inline-block;"><a href="TrimmerSearch.jsp"
-					class="col-lg-2 col-sm-2">Search ID</a><br>
-				<li>
-				<li>style="display: inline-block;"><a href="CompanySearch.jsp"
-					class="col-lg-2 col-sm-2">Search Company</a><br>
-				<li>
+
+			<ul class="nav justify-content-end">
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="index.jsp">Home Page</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="TrimmerSearch.jsp">Search Id</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="CompanySearch.jsp">Search Company</a></li>
+				<li class="nav-item"><a class="nav-link" href="SearchAll.jsp">SearchAll</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="SerachTwoProperties.jsp">SearchByTwo</a></li>
+
 			</ul>
+
+
 		</div>
 	</nav>
 
@@ -56,25 +61,25 @@ h1 {
 				type="text" class="form-control" name="company" id="formFile"
 				required="required" placeholder="Enter company" value="${company}" />
 		</div>
-		Select Color <select class="form-select"
+		<br> Select Color <select class="form-select"
 			aria-label="Default select example" name="color" required="required">
 			<option selected value="">Select Color</option>
 			<c:forEach items="${colors}" var="c">
 				<option value="${c}">${c}</option>
 			</c:forEach>
-		</select> Select Speed <select class="form-select"
+		</select><br> Select Speed <select class="form-select"
 			aria-label="Default select example" name="speed" required="required">
 			<option selected value="">Select Speed</option>
 			<c:forEach items="${speeds}" var="s">
 				<option value="${s}">${s}</option>
 			</c:forEach>
-		</select> Select Type <select class="form-select"
+		</select> <br>Select Type <select class="form-select"
 			aria-label="Default select example" name="type" required="required">
 			<option selected value="">Select Type</option>
 			<c:forEach items="${types}" var="t">
 				<option value="${t}">${t}</option>
 			</c:forEach>
-		</select>
+		</select><br>
 
 		<div class="mb-3">
 			<label for="formFile" class="form-label">Price</label> <input

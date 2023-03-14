@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,21 +20,37 @@ h1 {
 	text-align: center;
 }
 </style>
+
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"
 				class="d-inline-block align-text-top"><img
 				src="https://www.shopdealclue.com/image/cache/catalog/PHILIPS-BT123015-Beard-Trimmer-Trimmer-30-min--Runtime-2-Length-Settings-Green-BT123015BeardTrimmer-459-600x600.jpeg"
 				alt="" height="130" width="150"> </a>
-			<ul>
-				<li style="display: inline-block; padding: 20px;"><a
-					href="trimmer" class="col-lg-2 col-sm-2">Register</a><br>
-					
+
+
+
+
+			<ul class="nav justify-content-end">
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="trimmer">Register</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="TrimmerSearch.jsp">Search Id</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="CompanySearch.jsp">Search Company</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="SearchAll.jsp">SearchAll</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="SearchTwoProperties.jsp">SearchByTwo</a></li>
+
+
 			</ul>
 		</div>
 	</nav>
-	<h1>Welcome to Trimmer Page</h1>
+
+	<h1>Welcome to Trimmer Home Page</h1>
+
 </body>
 </html>

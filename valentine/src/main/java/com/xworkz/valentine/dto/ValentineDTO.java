@@ -3,7 +3,7 @@ package com.xworkz.valentine.dto;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-import org.hibernate.dialect.MySQL55Dialect;
+
 
 import lombok.Data;
 

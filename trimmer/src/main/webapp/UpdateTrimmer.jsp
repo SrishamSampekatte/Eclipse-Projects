@@ -24,15 +24,19 @@ h1 {
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"
 				class="d-inline-block align-text-top"><img
 				src="https://www.shopdealclue.com/image/cache/catalog/PHILIPS-BT123015-Beard-Trimmer-Trimmer-30-min--Runtime-2-Length-Settings-Green-BT123015BeardTrimmer-459-600x600.jpeg"
 				alt="" height="130" width="150"> </a>
-			<ul>
-				<li>style="display: inline-block; padding: 20px;"><a
-					href="index.jsp" class="col-lg-2 col-sm-2">Home Page</a></li>
+
+			<ul class="nav justify-content-end">
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="index.jsp">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="Trimmer.jsp">Register</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="CompanySearch.jsp">search company</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -75,15 +79,14 @@ h1 {
 				<option value="${t}">${t}</option>
 			</c:forEach>
 		</select>
-		
+
 		<div class="mb-3">
 			<label for="formFile" class="form-label">Price</label> <input
 				type="number" class="form-control" name="price" id="formFile"
-				required="required" placeholder="Enter price"
-				value="${dto.price}" />
+				required="required" placeholder="Enter price" value="${dto.price}" />
 		</div>
 
-		
+
 		<input type="submit" value="Update" class="btn btn-primary" />
 	</form>
 
