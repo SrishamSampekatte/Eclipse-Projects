@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="ISO-8859-1">
 <title>X-Workz</title>
 <link
@@ -30,29 +31,29 @@ h1 {
 				src="https://www.shopdealclue.com/image/cache/catalog/PHILIPS-BT123015-Beard-Trimmer-Trimmer-30-min--Runtime-2-Length-Settings-Green-BT123015BeardTrimmer-459-600x600.jpeg"
 				alt="" height="130" width="150"> </a>
 
-
-
-
 			<ul class="nav justify-content-end">
 				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="trimmer">Register</a></li>
+					aria-current="page" href="index.jsp">Home Page</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="TrimmerSearch.jsp">Search Id</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="CompanySearch.jsp">Search Company</a></li>
+				<li class="nav-item"><a class="nav-link" href="SearchAll.jsp">SearchAll</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="SearchAll.jsp">SearchAll</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="SearchTwoProperties.jsp">SearchByTwo</a></li>
-					<li class="nav-item"><a class="nav-link"
-					href="ImageUpload.jsp">UploadImage</a></li>
-
+					href="SerachTwoProperties.jsp">SearchByTwo</a></li>
 
 			</ul>
+
+
 		</div>
 	</nav>
 
-	<h1>Welcome to Trimmer Home Page</h1>
+	<h1>Welcome to Image Upload</h1>
+
+	<form action="upload" method="post" enctype="multipart/form-data">
+		upload : <input type="file" name="chitra" /> <input type="submit"
+			value="upload" class="btn btn-primary" />
+	</form>
 
 </body>
 </html>

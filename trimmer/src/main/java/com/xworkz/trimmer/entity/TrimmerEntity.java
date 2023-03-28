@@ -12,7 +12,6 @@ import lombok.Data;
 @Entity
 @Table(name = "trimmer_table")
 @NamedQuery(name = "findByCompany", query = "select entity from TrimmerEntity entity where entity.company=:comp")
-
 @NamedQuery(name = "findByAll", query = "select entity from TrimmerEntity entity")
 @NamedQuery(name = "findByTwoProperties", query = "select entity from TrimmerEntity entity where entity.company=:nameby or entity.color=:colorby")
 public class TrimmerEntity {
